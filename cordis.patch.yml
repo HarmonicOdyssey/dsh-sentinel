@@ -1,0 +1,10 @@
+# dsh-sentinel 的 bundle patch 层。
+#
+# package.json 的 `dsh.bundle.patch` 指向本文件；DSH 的 loader 会把它插入
+# profile 的组合树（位于各 bundle 层之后、用户自己的 cordis.patch.yml 之前）。
+#
+# 只插入一行，且不放进任何 required 名单：这一行失败只会让哨兵自己不可见，
+# 不会阻止 DSH 启动。哨兵自身再以 try/catch 和 self-check 兜底。
+- insert:
+    - id: sentinel
+      name: dsh-sentinel

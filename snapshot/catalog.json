@@ -1,0 +1,369 @@
+{
+  "format": 1,
+  "generated_at": "2026-11-08T00:13:43.719Z",
+  "dsh_version": "0.2.2-rc.1",
+  "source": "packages/extensions/tool-cordis/src/api-catalog.ts#EVENT_API",
+  "event_count": 90,
+  "events": [
+    {
+      "name": "agent-loop/config-start-failed",
+      "mode": "emit"
+    },
+    {
+      "name": "agent-preset/selected",
+      "mode": "emit"
+    },
+    {
+      "name": "agent/assistant-stream",
+      "mode": "emit"
+    },
+    {
+      "name": "agent/created",
+      "mode": "serial"
+    },
+    {
+      "name": "agent/disposed",
+      "mode": "emit"
+    },
+    {
+      "name": "agent/error",
+      "mode": "emit"
+    },
+    {
+      "name": "agent/inbox/claimed",
+      "mode": "emit"
+    },
+    {
+      "name": "agent/inbox/discarded",
+      "mode": "emit"
+    },
+    {
+      "name": "agent/inbox/inserted",
+      "mode": "emit"
+    },
+    {
+      "name": "agent/pre-step",
+      "mode": "waterfall"
+    },
+    {
+      "name": "agent/request-error",
+      "mode": "waterfall"
+    },
+    {
+      "name": "agent/status",
+      "mode": "emit"
+    },
+    {
+      "name": "agent/turn-stopping",
+      "mode": "serial"
+    },
+    {
+      "name": "api-session/activity",
+      "mode": "emit"
+    },
+    {
+      "name": "api-session/added",
+      "mode": "emit"
+    },
+    {
+      "name": "api-session/error",
+      "mode": "emit"
+    },
+    {
+      "name": "api-session/removed",
+      "mode": "emit"
+    },
+    {
+      "name": "api-session/status",
+      "mode": "emit"
+    },
+    {
+      "name": "app-boot/config-reload",
+      "mode": "emit"
+    },
+    {
+      "name": "approval/request",
+      "mode": "waterfall"
+    },
+    {
+      "name": "authorization/settled",
+      "mode": "emit"
+    },
+    {
+      "name": "commands/change",
+      "mode": "emit"
+    },
+    {
+      "name": "compaction/summary-error",
+      "mode": "waterfall"
+    },
+    {
+      "name": "connection/request",
+      "mode": "waterfall"
+    },
+    {
+      "name": "cordis/dynamic-package",
+      "mode": "emit"
+    },
+    {
+      "name": "cordis/dynamic-retract",
+      "mode": "emit"
+    },
+    {
+      "name": "cordis/inspect-query",
+      "mode": "emit"
+    },
+    {
+      "name": "cordis/inspect-query-resolved",
+      "mode": "emit"
+    },
+    {
+      "name": "cordis/request-run",
+      "mode": "emit"
+    },
+    {
+      "name": "cordis/request-run-resolved",
+      "mode": "emit"
+    },
+    {
+      "name": "credentials/record-updated",
+      "mode": "emit"
+    },
+    {
+      "name": "credentials/reference-updated",
+      "mode": "emit"
+    },
+    {
+      "name": "deepseek-account/model-sign-in-required",
+      "mode": "emit"
+    },
+    {
+      "name": "deepseek-account/session-expired",
+      "mode": "emit"
+    },
+    {
+      "name": "deepseek-account/signed-out",
+      "mode": "emit"
+    },
+    {
+      "name": "domain/changed",
+      "mode": "emit"
+    },
+    {
+      "name": "feedback/committed",
+      "mode": "parallel"
+    },
+    {
+      "name": "forge/providers-changed",
+      "mode": "parallel"
+    },
+    {
+      "name": "fs/delete-intent",
+      "mode": "waterfall"
+    },
+    {
+      "name": "fs/edit-intent",
+      "mode": "waterfall"
+    },
+    {
+      "name": "fs/observed",
+      "mode": "emit"
+    },
+    {
+      "name": "fs/write-intent",
+      "mode": "waterfall"
+    },
+    {
+      "name": "goal/activation-changed",
+      "mode": "emit"
+    },
+    {
+      "name": "goal/changed",
+      "mode": "emit"
+    },
+    {
+      "name": "hmr/change",
+      "mode": "emit"
+    },
+    {
+      "name": "hmr/reload",
+      "mode": "emit"
+    },
+    {
+      "name": "llm-pi-ai/request-headers",
+      "mode": "waterfall"
+    },
+    {
+      "name": "llm/adapters-updated",
+      "mode": "emit"
+    },
+    {
+      "name": "llm/models-updated",
+      "mode": "emit"
+    },
+    {
+      "name": "llm/stream",
+      "mode": "waterfall"
+    },
+    {
+      "name": "mcp-manager/status",
+      "mode": "parallel"
+    },
+    {
+      "name": "permission-presets/catalog-changed",
+      "mode": "emit"
+    },
+    {
+      "name": "plugin-manager/changed",
+      "mode": "emit"
+    },
+    {
+      "name": "plugin-manager/install-log",
+      "mode": "emit"
+    },
+    {
+      "name": "plugin-manager/install-state",
+      "mode": "emit"
+    },
+    {
+      "name": "plugin-manager/operation",
+      "mode": "parallel"
+    },
+    {
+      "name": "plugin-manager/update-state",
+      "mode": "emit"
+    },
+    {
+      "name": "plugin-market/changed",
+      "mode": "emit"
+    },
+    {
+      "name": "schedule/changed",
+      "mode": "emit"
+    },
+    {
+      "name": "schedule/resolve-agent",
+      "mode": "waterfall"
+    },
+    {
+      "name": "session-telemetry/record",
+      "mode": "waterfall"
+    },
+    {
+      "name": "session/created",
+      "mode": "emit"
+    },
+    {
+      "name": "session/disposed",
+      "mode": "emit"
+    },
+    {
+      "name": "session/event",
+      "mode": "emit"
+    },
+    {
+      "name": "session/flush",
+      "mode": "parallel"
+    },
+    {
+      "name": "settings/document-updated",
+      "mode": "emit"
+    },
+    {
+      "name": "skills/change",
+      "mode": "emit"
+    },
+    {
+      "name": "subagent/end",
+      "mode": "emit"
+    },
+    {
+      "name": "subagent/provider-added",
+      "mode": "emit"
+    },
+    {
+      "name": "subagent/provider-removed",
+      "mode": "emit"
+    },
+    {
+      "name": "subagent/start",
+      "mode": "emit"
+    },
+    {
+      "name": "system-prompt/assemble",
+      "mode": "waterfall"
+    },
+    {
+      "name": "system-prompt/change",
+      "mode": "emit"
+    },
+    {
+      "name": "tools/change",
+      "mode": "emit"
+    },
+    {
+      "name": "tools/execute",
+      "mode": "waterfall"
+    },
+    {
+      "name": "tools/post-execute",
+      "mode": "waterfall"
+    },
+    {
+      "name": "tools/pre-execute",
+      "mode": "waterfall"
+    },
+    {
+      "name": "tools/ptc-dispatch-log",
+      "mode": "waterfall"
+    },
+    {
+      "name": "tools/result",
+      "mode": "emit"
+    },
+    {
+      "name": "user-questions/request",
+      "mode": "waterfall"
+    },
+    {
+      "name": "web/providers-changed",
+      "mode": "emit"
+    },
+    {
+      "name": "webserver/index-inject",
+      "mode": "emit"
+    },
+    {
+      "name": "workflow/agent-end",
+      "mode": "emit"
+    },
+    {
+      "name": "workflow/agent-start",
+      "mode": "emit"
+    },
+    {
+      "name": "workflow/end",
+      "mode": "emit"
+    },
+    {
+      "name": "workflow/log",
+      "mode": "emit"
+    },
+    {
+      "name": "workflow/phase",
+      "mode": "emit"
+    },
+    {
+      "name": "workflow/start",
+      "mode": "emit"
+    },
+    {
+      "name": "workspace/session-activity",
+      "mode": "waterfall"
+    },
+    {
+      "name": "workspace/session-stop",
+      "mode": "parallel"
+    }
+  ]
+}

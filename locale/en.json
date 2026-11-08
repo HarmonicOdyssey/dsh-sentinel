@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Plugin health sentinel",
+    "description": "Statically finds installed DSH plugin listeners whose events no longer exist, and reports them in the sidebar, an agent tool, and structured JSON."
+  }
+}

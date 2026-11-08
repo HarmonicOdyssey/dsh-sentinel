@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Plugin health sentinel">
+  <defs>
+    <linearGradient id="shield-fill" x1="10" y1="6" x2="54" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3f8cff" />
+      <stop offset="1" stop-color="#1b4fd6" />
+    </linearGradient>
+  </defs>
+  <path d="M32 4 54 13v18c0 14.2-9.3 24.6-22 29C19.3 55.6 10 45.2 10 31V13L32 4Z" fill="url(#shield-fill)" />
+  <path d="M12.5 14.9 32 7l19.5 7.9V31c0 12.3-7.8 21.3-19.5 25.4C20.3 52.3 12.5 43.3 12.5 31V14.9Z" fill="none" stroke="#ffffff" stroke-opacity=".5" stroke-width="1.6" />
+  <path d="M17 34.5h7.2l4.1-9.3 6.1 17 4.2-10.4 2.7 2.7H47" fill="none" stroke="#ffffff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

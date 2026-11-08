@@ -1,0 +1,68 @@
+{
+  "name": "dsh-sentinel",
+  "version": "0.1.0",
+  "description": "Plugin health sentinel for DSH: statically finds listeners whose events no longer exist and reports them in the sidebar, an agent tool, and structured JSON.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./client/client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "lib",
+    "client",
+    "snapshot",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node ./node_modules/typescript/bin/tsc -p tsconfig.json",
+    "test": "node ./node_modules/typescript/bin/tsc -p tsconfig.json && node --test \"tests/**/*.test.mjs\"",
+    "check": "node ./node_modules/typescript/bin/tsc -p tsconfig.json && node --check client/client.js && node --test \"tests/**/*.test.mjs\"",
+    "snapshot": "node scripts/gen-snapshot.mjs"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "plugin-health",
+    "diagnostics",
+    "sentinel"
+  ],
+  "author": "HarmonicOdyssey",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarmonicOdyssey/dsh-sentinel.git"
+  },
+  "homepage": "https://github.com/HarmonicOdyssey/dsh-sentinel#readme",
+  "bugs": {
+    "url": "https://github.com/HarmonicOdyssey/dsh-sentinel/issues"
+  },
+  "engines": {
+    "node": ">=22.19"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "5.9.3"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar-right"
+      ]
+    }
+  }
+}
